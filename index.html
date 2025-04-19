@@ -11,6 +11,7 @@
       background-color: #ffe4ec;
       font-family: 'Comic Sans MS', cursive;
       overflow: hidden;
+      text-align: center;
     }
 
     .container {
@@ -19,6 +20,13 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 32px;
+      color: #ff69b4;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     }
 
     .photo-frame {
@@ -82,6 +90,7 @@
 </head>
 <body>
   <div class="container">
+    <h1>Fun Facts w Fairooze 🌞</h1>
     <div class="photo-frame">
       <img id="slideshow" src="sunsets/sunset1.jpg" alt="Sunset Photo">
     </div>
@@ -126,7 +135,7 @@
     }
 
     // Floating emojis
-    const emojis = ['💖','✨','🌸','😊','💕','🌈'];
+    const emojis = ['💖','✨','🌸','😊','💕'];
     for (let i = 0; i < 25; i++) {
       const e = document.createElement("div");
       e.className = "emoji";
