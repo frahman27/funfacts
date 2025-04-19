@@ -75,3 +75,48 @@
       }
       100% {
         transform: translateY(-100vh) translateX(20px);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="photo-frame">
+      <img id="slideshow" src="sunsets/sun1.jpg" alt="Sunset Photo">
+    </div>
+    <button onclick="nextImage()">Next Memory 🌇</button>
+  </div>
+
+  <script>
+    // List your actual image filenames here
+    const images = [
+      "sunsets/sunset1.jpeg",
+    ];
+
+    let index = 0;
+    const img = document.getElementById("slideshow");
+
+    function nextImage() {
+      index = (index + 1) % images.length;
+      img.style.opacity = 0;
+      setTimeout(() => {
+        img.src = images[index];
+        img.style.opacity = 1;
+      }, 300);
+    }
+
+    // Optional: Floating emojis
+    const emojis = ['💖','✨','🌸','😊','💕','🌈'];
+    for (let i = 0; i < 25; i++) {
+      const e = document.createElement("div");
+      e.className = "emoji";
+      e.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+      e.style.left = Math.random() * 100 + "vw";
+      e.style.animationDuration = 5 + Math.random() * 10 + "s";
+      e.style.fontSize = 16 + Math.random() * 24 + "px";
+      document.body.appendChild(e);
+    }
+  </script>
+</body>
+</html>
