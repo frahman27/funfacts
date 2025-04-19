@@ -8,7 +8,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #ffe4ec; /* pastel pink */
+      background-color: #ffe4ec;
       font-family: 'Comic Sans MS', cursive;
       overflow: hidden;
     }
@@ -83,15 +83,34 @@
 <body>
   <div class="container">
     <div class="photo-frame">
-      <img id="slideshow" src="sunsets/sun1.jpg" alt="Sunset Photo">
+      <img id="slideshow" src="sunsets/sunset1.jpg" alt="Sunset Photo">
     </div>
     <button onclick="nextImage()">Next Memory 🌇</button>
   </div>
 
   <script>
-    // List your actual image filenames here
     const images = [
-      "sunsets/sunset1.jpeg",
+      "sunsets/sunset1.jpg",
+      "sunsets/sunset2.jpg",
+      "sunsets/sunset3.jpg",
+      "sunsets/sunset4.jpg",
+      "sunsets/sunset5.jpg",
+      "sunsets/sunset6.jpg",
+      "sunsets/sunset7.jpg",
+      "sunsets/sunset8.jpg",
+      "sunsets/sunset9.jpg",
+      "sunsets/sunset10.jpg",
+      "sunsets/sunset11.jpg",
+      "sunsets/sunset12.jpg",
+      "sunsets/sunset13.jpg",
+      "sunsets/sunset14.jpg",
+      "sunsets/sunset15.jpg",
+      "sunsets/sunset16.jpg",
+      "sunsets/sunset17.jpg",
+      "sunsets/sunset18.jpg",
+      "sunsets/sunset19.jpg",
+      "sunsets/sunset20.jpg",
+      "sunsets/sunset21.jpg"
     ];
 
     let index = 0;
@@ -106,7 +125,7 @@
       }, 300);
     }
 
-    // Optional: Floating emojis
+    // Floating emojis
     const emojis = ['💖','✨','🌸','😊','💕','🌈'];
     for (let i = 0; i < 25; i++) {
       const e = document.createElement("div");
